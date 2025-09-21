@@ -7,7 +7,7 @@ import HeroBanner from '@/components/HeroBanner'
 import ProductsSection from '@/components/ProductsSection'
 import PeopleAlsoViewed from '@/components/PeopleAlsoViewed'
 import Footer from '@/components/Footer'
-import Notification from '@/components/Notification'
+//import Notification from '@/components/Notification'
 import { CartProvider, useCart } from '@/context/CartContext'
 import { products } from '@/data/products'
 
