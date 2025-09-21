@@ -22,7 +22,10 @@ export default function HeroBanner() {
           onError={(e) => {
             // Fallback to CSS banner if webp doesn't load
             e.currentTarget.style.display = 'none';
-            e.currentTarget.nextElementSibling.style.display = 'block';
+            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+            if (nextElement) {
+              nextElement.style.display = 'block';
+            }
           }}
         />
         
@@ -89,7 +92,10 @@ export default function HeroBanner() {
                     onError={(e) => {
                       // Fallback to original design if image doesn't exist
                       e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'block';
+                      const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                      if (nextElement) {
+                        nextElement.style.display = 'block';
+                      }
                     }}
                   />
                   <div className="bg-red-500 border-4 border-white rounded-full px-8 py-6 relative hidden">
@@ -166,7 +172,10 @@ export default function HeroBanner() {
                   className="w-8 h-8"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'block';
+                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextElement) {
+                      nextElement.style.display = 'block';
+                    }
                   }}
                 />
                 <span className="text-white text-sm hidden">↻</span>
@@ -180,7 +189,10 @@ export default function HeroBanner() {
                   className="w-8 h-8"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'block';
+                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextElement) {
+                      nextElement.style.display = 'block';
+                    }
                   }}
                 />
                 <span className="text-white text-sm hidden">₹</span>
@@ -194,7 +206,10 @@ export default function HeroBanner() {
                   className="w-8 h-8"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'block';
+                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextElement) {
+                      nextElement.style.display = 'block';
+                    }
                   }}
                 />
                 <span className="text-white text-sm hidden">%</span>

@@ -65,7 +65,10 @@ export default function Header() {
               onError={(e) => {
                 // Fallback to text if image doesn't exist
                 e.currentTarget.style.display = 'none';
-                e.currentTarget.nextElementSibling.style.display = 'block';
+                const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                if (nextElement) {
+                  nextElement.style.display = 'block';
+                }
               }}
             />
             <h1 className="text-[#8B5CF6] font-bold text-lg hidden">meesho</h1>

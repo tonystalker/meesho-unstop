@@ -30,12 +30,15 @@ export default function PeopleAlsoViewed({ products }: PeopleAlsoViewedProps) {
             <div className="flex justify-center items-center gap-12">
             <div className="flex items-center gap-2 text-[#8B5CF6]">
               <img 
-                src="/assets/icons/price-icon.png" 
+                src="/assets/icons/lowest-price.svg" 
                 alt="Lowest Price" 
                 className="w-8 h-8"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'flex';
+                  const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                  if (nextElement) {
+                    nextElement.style.display = 'flex';
+                  }
                 }}
               />
               <div className="w-8 h-8 bg-green-500 rounded-full items-center justify-center hidden">
@@ -45,12 +48,15 @@ export default function PeopleAlsoViewed({ products }: PeopleAlsoViewedProps) {
             </div>
             <div className="flex items-center gap-2 text-[#8B5CF6]">
               <img 
-                src="/assets/icons/cod-icon.png" 
+                src="/assets/icons/cod.svg" 
                 alt="Cash on Delivery" 
                 className="w-8 h-8"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'flex';
+                  const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                  if (nextElement) {
+                    nextElement.style.display = 'flex';
+                  }
                 }}
               />
               <div className="w-8 h-8 bg-green-500 rounded-full items-center justify-center hidden">
@@ -60,12 +66,15 @@ export default function PeopleAlsoViewed({ products }: PeopleAlsoViewedProps) {
             </div>
             <div className="flex items-center gap-2 text-[#8B5CF6]">
               <img 
-                src="/assets/icons/return-icon.png" 
+                src="/assets/icons/returns.svg" 
                 alt="7-day Returns" 
                 className="w-8 h-8"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'flex';
+                  const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                  if (nextElement) {
+                    nextElement.style.display = 'flex';
+                  }
                 }}
               />
               <div className="w-8 h-8 bg-green-500 rounded-full items-center justify-center hidden">

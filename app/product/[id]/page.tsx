@@ -886,7 +886,7 @@ function ProductDetailContent() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="text-xs text-gray-600 text-center max-w-20 truncate">Men's T-Shirt</span>
+                  <span className="text-xs text-gray-600 text-center max-w-20 truncate">Men&apos;s T-Shirt</span>
                   <span className="text-sm font-semibold">₹299</span>
                 </div>
 
@@ -904,7 +904,7 @@ function ProductDetailContent() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="text-xs text-gray-600 text-center max-w-20 truncate">Men's Jeans</span>
+                  <span className="text-xs text-gray-600 text-center max-w-20 truncate">Men&apos;s Jeans</span>
                   <span className="text-sm font-semibold">₹599</span>
                 </div>
               </div>
@@ -947,7 +947,7 @@ function ProductDetailContent() {
           {/* AI Generated Summary */}
           <div className="mb-4">
             <p className="text-gray-700 text-base leading-relaxed mb-3">
-              Customers generally find the polo shirt to be a "premium product with mercerized cotton fabric that feels soft and smooth." They appreciate its "good fit, comfortable feel, and premium appearance," with one customer specifically mentioning it "pairs well with trousers or jeans." <span className="font-semibold">Color quality</span> receives "mixed feedback": some say the color doesn't fade, while others report it fades after one wash. <span className="font-semibold">Value for money</span> opinions are "divided": some consider it a great value, while others find it overpriced.
+              Customers generally find the polo shirt to be a &quot;premium product with mercerized cotton fabric that feels soft and smooth.&quot; They appreciate its &quot;good fit, comfortable feel, and premium appearance,&quot; with one customer specifically mentioning it &quot;pairs well with trousers or jeans.&quot; <span className="font-semibold">Color quality</span> receives &quot;mixed feedback&quot;: some say the color doesn&apos;t fade, while others report it fades after one wash. <span className="font-semibold">Value for money</span> opinions are &quot;divided&quot;: some consider it a great value, while others find it overpriced.
             </p>
             
             {/* AI Generation Indicator */}

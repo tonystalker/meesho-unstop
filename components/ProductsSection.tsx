@@ -199,13 +199,14 @@ export default function ProductsSection() {
       { threshold: 0.1 }
     )
 
-    if (observerRef.current) {
-      observer.observe(observerRef.current)
+    const currentRef = observerRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (observerRef.current) {
-        observer.unobserve(observerRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [loadMoreProducts, hasMore, isLoading])
@@ -443,7 +444,10 @@ export default function ProductsSection() {
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
-                          e.currentTarget.nextElementSibling.style.display = 'flex';
+                          const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                          if (nextElement) {
+                            nextElement.style.display = 'flex';
+                          }
                         }}
                       />
                     ) : null}
@@ -514,7 +518,10 @@ export default function ProductsSection() {
                           className="h-6 w-auto"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none';
-                            e.currentTarget.nextElementSibling.style.display = 'inline-block';
+                            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                            if (nextElement) {
+                              nextElement.style.display = 'inline-block';
+                            }
                           }}
                         />
                         <div className="bg-purple-100 text-purple-600 px-2 py-1 rounded text-xs font-medium hidden">
